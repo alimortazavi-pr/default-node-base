@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #565656;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .content{
+    width: calc(70% - 40px);
+    border: 1px rgb(212, 45, 45) solid;
+    padding: 20px;
+    color: white;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.7rem;
+}
+
+.form-group label , .form-group-checkbox label{
+    font-size: large;
+    margin-bottom: 0.2rem;
+}
+
+.form-group-checkbox{
+    margin-bottom: 0.7rem;
+}
+
+.input-style{
+    outline: none;
+    padding: 3px;
+}
+
+.link-style{
+    text-decoration: none;
+    color: #ffc5c5;
+}
+
+.submit-style{
+    width: 100%;
+    border: none;
+    background-color: rgb(189, 75, 55);
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
+}
+
+@media only screen and (min-width: 800px) {
+    .main .content{
+        width: 30%;
+    }
+}
